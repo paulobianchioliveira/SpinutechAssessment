@@ -1,0 +1,18 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Execise 1</p>
+    <form method="post">
+        <p>Input:<input type="text" name="currency" id="currency" /></p>
+        <p><input type="submit" name="btnSubm" value="Submit" /></p>
+        <p><label id="teste">@Html.ViewData["ret"]</label></p>
+    </form>
+
+    <div>
+    </div>
+    
+</div>
