@@ -26,7 +26,7 @@ namespace SpinutechAssessment.Pages
             {
                 if (words.Length>0)
                     words.Append(" and ");
-                //words.Append(NumberToWords(decimalPart));
+
                 words.Append($"{decimalPart}/100");
                 //words.Append(decimalPart == 1 ? " Cent" : " Cents");
             }

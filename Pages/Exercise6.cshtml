@@ -3,6 +3,27 @@
 @{
     ViewData["Title"] = "Privacy Policy";
 }
-<h1>@ViewData["Title"]</h1>
 
-<p>Use this page to detail your site's privacy policy.</p>
+<div class="text-center">
+    <p>Execise 6</p>
+    <form method="post">
+        <p>Input:<input type="text" name="integer-input" id="integer-input" /></p>
+        <p><input type="submit" name="btnSubm" value="Submit" /></p>
+        <p><label id="teste">@Html.ViewData["ret"]</label></p>
+    </form>
+</div>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+<script src="~/js/jquery.mask.min.js"></script>
+
+
+<script type="text/javascript">
+
+
+    $(document).ready(function(){
+
+      $("#integer-input").mask('0#');
+
+    });
+
+</script>
