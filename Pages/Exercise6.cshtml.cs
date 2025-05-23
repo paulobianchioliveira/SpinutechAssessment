@@ -27,11 +27,12 @@ public class PrivacyModel : PageModel
             string reverse = ""; string ret = $"{input} is not a palindrome";
             for (int i = input.Length - 1; i >= 0; i--)
             {
-                // Do something
                 reverse += input.Substring(i, 1);
             }
 
-            if (reverse.Equals(input)) ret = $"{input} is a palindrome";
+            if (!string.IsNullOrEmpty(reverse))
+                if (reverse.Equals(input)) ret = $"{input} is a palindrome";
+
             ViewData["ret"] = ret;
         }
     }
