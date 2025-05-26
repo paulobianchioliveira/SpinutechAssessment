@@ -1,0 +1,22 @@
+﻿@model ExercisesViewModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Exercise 1</h1>
+    <p>
+        <form asp-controller="Home" asp-action="Exercise1">
+            <input type="text" id="input" name="input" />
+            <input type="submit" value="Submit" />
+            <br /> @Html.DisplayFor(m => m.Output)
+        </form>
+    </p>
+</div>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/js/jquery.maskmoney.min.js"></script>
+<script>
+    $(function() {
+      $('#input').maskMoney();
+    })
+</script>

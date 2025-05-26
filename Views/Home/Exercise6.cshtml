@@ -1,0 +1,25 @@
+﻿@model ExercisesViewModel
+@{
+    ViewData["Title"] = "Privacy Policy";
+}
+<div class="text-center">
+    <h1 class="display-4">Exercise 6</h1>
+    <p>
+        <form asp-controller="Home" asp-action="Exercise6">
+            <input type="text" id="input" name="input" />
+            <input type="submit" value="Submit" />
+            <br /> @Html.DisplayFor(m => m.Output)
+        </form>
+    </p>
+</div>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/js/jquery.mask.min.js"></script>
+
+<script>
+
+    $(function() {
+      $('#input').mask('0#');
+    })
+
+</script>
